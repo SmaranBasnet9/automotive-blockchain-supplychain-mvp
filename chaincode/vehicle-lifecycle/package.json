@@ -1,0 +1,14 @@
+{
+  "name": "vehicle-lifecycle-chaincode",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Hyperledger Fabric chaincode for automotive vehicle lifecycle management",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests configured for chaincode\" && exit 0"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^2.5.0",
+    "fabric-shim": "^2.5.0"
+  }
+}
