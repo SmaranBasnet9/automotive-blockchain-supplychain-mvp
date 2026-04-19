@@ -1,0 +1,17 @@
+{
+  "name": "automotive-blockchain-supplychain-mvp",
+  "version": "1.0.0",
+  "private": true,
+  "description": "MVP for an automotive blockchain supply chain using Hyperledger Fabric",
+  "scripts": {
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js",
+    "frontend": "cd frontend && npm start"
+  },
+  "dependencies": {
+    "express": "^4.18.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

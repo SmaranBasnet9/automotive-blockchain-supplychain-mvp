@@ -1,0 +1,14 @@
+# Docker image for the backend Express server
+# Uses Node.js, installs dependencies, and runs the server on port 3000.
+
+FROM node:20-alpine
+WORKDIR /app
+
+COPY package.json package-lock.json* ./
+RUN npm install
+
+COPY backend ./backend
+COPY .env.example .env
+
+EXPOSE 3000
+CMD ["node", "backend/server.js"]

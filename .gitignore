@@ -1,0 +1,12 @@
+node_modules/
+.env
+dist/
+build/
+coverage/
+
+# Fabric crypto materials
+crypto-config/
+channel-artifacts/
+
+# OS files
+.DS_Store
