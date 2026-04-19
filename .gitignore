@@ -1,12 +1,198 @@
+########################################
+# Dependencies & Package Management
+########################################
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+########################################
+# Environment & Secrets (CRITICAL)
+########################################
 .env
+.env.local
+.env.*.local
+.env.production
+.env.development
+.env.test
+secrets/
+.credentials/
+
+########################################
+# IDE & Editor
+########################################
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+.eclipse
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.history
+.externalToolBuilders/
+
+########################################
+# OS Files
+########################################
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+*.log
+ehthumbs.db
+
+########################################
+# Logs & Temporary Files
+########################################
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+########################################
+# Runtime Data
+########################################
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+########################################
+# Coverage & Testing
+########################################
+coverage/
+.nyc_output/
+.nycrc
+.jscpd.json
+test-results/
+.mocha/
+jest-results.json
+
+########################################
+# Build & Compilation Outputs
+########################################
 dist/
 build/
-coverage/
+out/
+*.tsbuildinfo
+.webpack/
+.next/
+out/
 
-# Fabric crypto materials
-crypto-config/
-channel-artifacts/
+########################################
+# Blockchain & Wallet (SENSITIVE!)
+########################################
+backend/wallet/
+backend/crypto-config/
+blockchain-network/crypto-config/
+blockchain-network/channel-artifacts/
+*.block
+orderer.genesis.block
 
-# OS files
-.DS_Store
+########################################
+# Certificates & Private Keys (SENSITIVE!)
+########################################
+*.pem
+*.key
+*.crt
+*.cert
+*.p12
+*.pfx
+*.jks
+*.keystore
+private-key*
+public-key*
+ca-cert*
+
+########################################
+# Hyperledger Fabric Artifacts
+########################################
+msp/
+config.yaml
+core.yaml
+configtx.yaml
+
+########################################
+# Database Files
+########################################
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+.dbdisk/
+
+########################################
+# Docker & Container
+########################################
+docker-volume-data/
+.docker/
+.dockerignore
+
+########################################
+# Temporary & Cache Files
+########################################
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/
+.eslintcache
+.parcel-cache
+.turborepo
+.turbo/
+
+########################################
+# Node.js Specific
+########################################
+node_modules/
+npm-debug.log*
+.npm
+.gpm
+
+########################################
+# Package Manager Cache
+########################################
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+########################################
+# Debugging
+########################################
+debug-logs/
+transaction-logs/
+crash-dumps/
+perf-logs/
+
+########################################
+# IDE Workspace State
+########################################
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+!.vscode/extensions.json
+
+########################################
+# Custom Project Files
+########################################
+wallet/
+keys/
+credentials/
+backup/
+exports/
+temp-files/
